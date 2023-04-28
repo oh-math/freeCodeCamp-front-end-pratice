@@ -1,15 +1,23 @@
 .quoteBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 3px;
-    position: relative;
     width: 450px;
     padding: 40px 50px;
-    display: table;
     background-color: #fff;
     font-family: 'Raleway', sans-serif;
+
 
     .text {
         font-size: 30px;
         text-align: center;
+    }
+
+    .author {
+        margin-left: 395px;
+        margin-bottom: 45px;
     }
 
     .tweetQuote {
@@ -30,7 +38,6 @@
     }
 
     .newQuote {
-        align-self: center;
         background-color: red;
         border-radius: 3px;
         border-color: red;
