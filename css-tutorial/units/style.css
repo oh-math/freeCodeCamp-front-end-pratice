@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    border: 2px dashed red;
+    width: 50%;
+    font-size: 3rem;
+    padding: 0.5em;
+}
+body {
+    /* definição da altura minima para 100 unidades da view total */
+    /* caso fosse feito com apenas a propriedade `height` ele sempre */
+    /* seria limitado a 100 unidades da view */
+    min-height: 100vh;
+}
+
+p {
+    font-size: 1.5rem;
+    /* a bordar receberá UMA unidade relativa a unidade raiz (font-size acima) */
+    border: 1em solid black;
+    width: 40ch;
+}
