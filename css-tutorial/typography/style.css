@@ -1,0 +1,16 @@
+body {
+  padding: 10%;
+  font-size: 2rem;
+  /* as opções após após a virgula são alternativas caso determinada fonte não exista no navegador */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* input,
+button {
+  font: inherit;
+} */
+
+p {
+  text-indent: 2em;
+}
