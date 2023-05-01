@@ -1,0 +1,72 @@
+body {
+  text-align: center;
+}
+
+main {
+  margin: auto;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+
+  border: 0.2rem solid;
+  border-radius: 1rem;
+}
+
+h1 {
+  margin: auto;
+  width: 100%;
+  padding: 0.4em 0 0.4em 0;
+
+  border: 1px solid;
+  border-style: none none solid none;
+  border-radius: 1rem 1rem 0 0;
+
+  background-color: #ffd000;
+  text-align: center;
+}
+
+ul {
+  margin: auto;
+  padding: 0;
+  text-align: center;
+  list-style-type: none;
+}
+
+li {
+  position: relative; /* Make the parent element positioned */
+  padding: 1.5em;
+
+  border: 1px solid;
+  border-style: none none solid none;
+  border-radius: 1rem 1rem 0 0;
+
+  text-align: center;
+}
+
+li a {
+  position: absolute; /* Position the <a> element relative to the parent */
+  top: 0;
+  left: 0;
+  width: 100%; /* Make the <a> element's width 100% of the parent */
+  height: 100%;
+
+  color: #333;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+li a:hover,
+li:focus {
+  background-color: #333;
+  color: whitesmoke;
+
+  cursor: pointer;
+}
+
+li:last-child {
+  border-style: none;
+}
+
+footer {
+  padding-top: 1em;
+  color: #333;
+}
