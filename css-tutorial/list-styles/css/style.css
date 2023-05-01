@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  padding: 5% 10%;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+ol {
+  list-style-type: lower-alpha;
+}
+
+ul {
+  text-align: center;
+  color: blue;
+  line-height: 1.6;
+
+  /* 
+  ------------------------------------------------
+  `list-style` é um shorthand para os estilos abaixo */
+  list-style: square url("../assets/checkmark.png") inside;
+
+  /* 
+  list-style-type: square;
+  list-style-position: inside;
+  list-style-image: url('../assets/checkmark.png'); 
+  ------------------------------------------------
+  */
+}
+
+/* especificando a lista não ordenada */
+ul li {
+  color: cadetblue;
+}
+
+/*  selecionando o terceiro filho do elemento pai 
+   (pai = `ol`, filho = `li`) */
+ol li:nth-child(3) {
+  width: 160px;
+  background-color: aquamarine;
+}
+
+
+/* pseudo-classe dos marcadores de lista */
+ul ::marker {
+  color: red;
+  content: "item >";
+}
