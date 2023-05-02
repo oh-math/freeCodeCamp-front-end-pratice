@@ -18,7 +18,7 @@ nav {
 
   font-size: 2rem;
 
-  border: 0.2rem solid;
+  border: 3px solid;
   border-radius: 1rem;
 
   /* fixed my problem with the spacing between the <a> elements */
@@ -28,9 +28,8 @@ nav {
 h1 {
   padding: 0.4em 0;
 
-  border: 1px;
-  border-style: none none solid none;
-  border-radius: 1rem 1rem 0 0;
+  border-bottom: 1px solid;
+  border-radius: .7rem .7rem 0 0;
 
   background-color: #ffd000;
   color: #292929;
@@ -44,17 +43,19 @@ ul {
   list-style-type: none;
 }
 
-li {
-  border-bottom: 1px solid;
-}
-
 li a {
   display: block;
   color: #333;
   transition: 0.5s;
-
+  
+  border-bottom: 1px solid;
   font-size: 1.5em;
   text-decoration: none;
+}
+
+li:last-child a {
+  border-bottom: none;
+  border-radius: 0 0 .7rem .7rem;
 }
 
 li a:hover,
@@ -65,9 +66,6 @@ li:focus {
   cursor: pointer;
 }
 
-li:last-child {
-  border-style: none;
-}
 
 footer {
   font-size: 1.2em;
