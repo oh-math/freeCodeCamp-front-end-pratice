@@ -1,30 +1,42 @@
 * {
-  margin: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 
 body {
+  margin: 1rem;
+  
   text-align: center;
+  font-family: sans-serif;
 }
 
-main {
+nav {
+  /* centerlize nav */
+  margin: 0 auto;
   max-width: 50rem;
+  
   font-size: 2rem;
-  font-family: "Roboto", sans-serif;
 
   border: 0.2rem solid;
   border-radius: 1rem;
+
+  /* fixed my problem with the spacing between the <a> elements */
+  line-height: 6rem;
 }
 
 h1 {
-  padding: 0.4em 0 0.4em 0;
+  padding: 0.4em 0;
 
-  border: 1px solid;
+  border: 1px;
   border-style: none none solid none;
   border-radius: 1rem 1rem 0 0;
 
   background-color: #ffd000;
+  color: #292929;
+
   text-align: center;
+  font-size: 1.8em;
 }
 
 ul {
@@ -36,10 +48,7 @@ li {
   position: relative; /* Make the parent element positioned */
   padding: 1.5em;
 
-  
-  border: 1px solid;
-  border-style: none none solid none;
-  border-radius: 1rem 1rem 0 0;
+  border-bottom: 1px solid;
 }
 
 li a {
@@ -50,6 +59,8 @@ li a {
   height: 100%;
 
   color: #333;
+  transition: .5s;
+
   font-size: 1.5em;
   text-decoration: none;
 }
@@ -67,6 +78,7 @@ li:last-child {
 }
 
 footer {
+  font-size: 1.2em;
   padding-top: 1em;
   color: #333;
 }
