@@ -6,7 +6,7 @@
 
 body {
   margin: 1rem;
-  
+
   text-align: center;
   font-family: sans-serif;
 }
@@ -15,7 +15,7 @@ nav {
   /* centerlize nav */
   margin: 0 auto;
   max-width: 50rem;
-  
+
   font-size: 2rem;
 
   border: 0.2rem solid;
@@ -45,21 +45,13 @@ ul {
 }
 
 li {
-  position: relative; /* Make the parent element positioned */
-  padding: 1.5em;
-
   border-bottom: 1px solid;
 }
 
 li a {
-  position: absolute; /* Position the <a> element relative to the parent */
-  top: 0;
-  left: 0;
-  width: 100%; /* Make the <a> element's width 100% of the parent */
-  height: 100%;
-
+  display: block;
   color: #333;
-  transition: .5s;
+  transition: 0.5s;
 
   font-size: 1.5em;
   text-decoration: none;
