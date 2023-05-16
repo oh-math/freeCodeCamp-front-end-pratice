@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  /* espaço entre os itens */
+  gap: 1rem;
+  align-items: center;
+  /* não permite que os items dentro do container faça um overflow e 
+     os define em linhas*/
+  flex-flow: row wrap;
+  /* define um comportamento quando ocorre um overflow
+    overflow: 
+   */
+  align-content: center;
+
+  max-width: 1000px;
+  min-height: 400px;
+  margin-inline: auto;
+  border: 1px solid #000;
+}
+
+.box {
+  display: flex;
+  /* centraliza qualquer elemento no container */
+  justify-content: center;
+  align-items: center;
+
+  flex: 1 1 250px;
+
+  margin: 10px;
+  height: 100px;
+  /* min-width: 100px; */
+  min-height: 100px;
+  padding: 0.5rem;
+
+  background-color: #000;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.box:nth-child(2) {
+  /* 
+  permite que o elemento filho 2 tenha 2x mais 'flex-basis'
+  flex-grow: 2;
+  ------------------
+  */
+  /* permite que o elemento filho 2 encolha 2x mais 'flex-basis' 
+  flex-shrink: 2; 
+  */
+
+  /* shorthand que diz: o item quando crescer sera 2x mais e quando encolher sera 2x menos*/
+  flex: 2 2 250px;
+  order: 4;
+}
